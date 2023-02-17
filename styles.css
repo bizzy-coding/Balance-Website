@@ -140,6 +140,17 @@ body {
     height: 40px;
     width: 40px;
   }
+
+
+  /* ===== SECOND SECTION ===== */
+
+
+  .second-section {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 75vh;
+  }
   
   .side-deets {
     position: relative;
@@ -173,11 +184,37 @@ body {
     border-bottom-left-radius: 400px;
   }
   
-  .second-section {
-    margin-top: 10rem;
+    /* ===== THIRD SECTION ===== */
+
+  .third-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+
+  gap: 4px;
+  grid-auto-flow: column;
+
   }
+/* 
+  .three-col {
+    grid-row: 1/1;
+    width: 25%;
+    text-align: center;
+    color: white;
+  }
+
+  .three-col.first {
+    grid-column: 1/1;
+  }
+
+  .three-col.second {
+    grid-column: 2/2;
+  }
+
+  .three-col.third {
+    grid-column: 3/3;
+  } */
+  
   
   /* ===== INSERT COMMENT HERE ===== */
   /* ===== INSERT COMMENT HERE ===== */
