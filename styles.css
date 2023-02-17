@@ -53,11 +53,18 @@ body {
   }
   
   .circle {
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 25vw;
     border: solid 2px #d9d9d9;
     border-radius: 100%;
     grid-row: 1/2;
+  }
+  
+  .circle:hover {
+    background-image: url("https://assets.londonist.com/uploads/2016/11/i875/nikelab_x_roundel_air_zoom_its_nice_that_5.jpg");
+    background-repeat: repeat;
+    background-size: 10vw;
+    background-position-y: top;
   }
   
   .o-1 {
@@ -77,10 +84,12 @@ body {
   }
   
   .o-3-text {
-    grid-column: 3 / 5;
-    grid-row: 1/2;
+    position: absolute;
+  /*   grid-column: 3 / 5;
+    grid-row: 1/2; */
     width: 220px;
     height: 300px;
+    margin-top: 40px;
     padding: 0 40px;
     color: black;
     z-index: 4;
@@ -140,11 +149,9 @@ body {
     height: 40px;
     width: 40px;
   }
-
-
+  
   /* ===== SECOND SECTION ===== */
-
-
+  
   .second-section {
     margin-top: 10rem;
     display: grid;
@@ -184,37 +191,63 @@ body {
     border-bottom-left-radius: 400px;
   }
   
-    /* ===== THIRD SECTION ===== */
-
+  /* ===== THIRD SECTION ===== */
+  
   .third-section {
     display: grid;
-  justify-content: center;
-  align-content: center;
-
-  gap: 4px;
-  grid-auto-flow: column;
-
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+    grid-gap: 120px;
+    padding: 20px;
+    margin: 0px 100px;
   }
-/* 
+  
+  .circle3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: white;
+  }
+  
   .three-col {
-    grid-row: 1/1;
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     color: white;
-  }
-
-  .three-col.first {
-    grid-column: 1/1;
-  }
-
-  .three-col.second {
-    grid-column: 2/2;
-  }
-
-  .three-col.third {
-    grid-column: 3/3;
-  } */
+    }
   
+  .h3 {
+    margin-top: 20px;
+  }
+  
+  .main-cta {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 20%;
+    margin: 0 auto;
+  }
+  
+  /* 
+    
+  
+    .three-col.first {
+      grid-column: 1/1;
+    }
+  
+    .three-col.second {
+      grid-column: 2/2;
+    }
+  
+    .three-col.third {
+      grid-column: 3/3;
+    } */
   
   /* ===== INSERT COMMENT HERE ===== */
   /* ===== INSERT COMMENT HERE ===== */
