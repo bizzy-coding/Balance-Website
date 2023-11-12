@@ -1,6 +1,8 @@
 ## Balance website
 
-Practicing creating beautiful visuals with css styling and animation.
+Practicing my css styling and animation skills.
+
+Creating beautiful visual experiences without the confines of traditional website usibility.
 
 ## Version 1.0 - Layout
 
@@ -8,6 +10,6 @@ Practicing creating beautiful visuals with css styling and animation.
 
 ## Next steps
 
-Finsh designing site 
-Add animations 
+- [] Finsh designing site 
+- [] Add animations 
 
