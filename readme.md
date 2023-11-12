@@ -4,7 +4,7 @@ Practicing creating beautiful visuals with css styling and animation.
 
 ## Version 1.0 - Layout
 
-![screenshot of website](/Simple-js-jumping-game.png)
+![screenshot of website](/images/balance-website-v1.png)
 
 ## Next steps
 
