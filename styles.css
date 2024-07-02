@@ -233,6 +233,10 @@ body {
   border-radius: 5px;
   width: 20%;
   margin: 0 auto;
+  cursor: pointer;
+}
+.main-cta:hover {
+  animation: subtle-glow 1s ease-out infinite;
 }
 
 .right-side.s2
@@ -251,40 +255,7 @@ body {
 .side-deets div {
   width: 100%;
 }
-@media (max-width: 767px) {
-.circles-container p {
-  top: 270px;
-  position: absolute;
-  color: white;
-}
 
-.third-section {
-  grid-auto-flow: unset;
-}
-}
-
-
-/* 
-  
-
-  .three-col.first {
-    grid-column: 1/1;
-  }
-
-  .three-col.second {
-    grid-column: 2/2;
-  }
-
-  .three-col.third {
-    grid-column: 3/3;
-  } */
-
-/* ===== INSERT COMMENT HERE ===== */
-/* ===== INSERT COMMENT HERE ===== */
-/* ===== INSERT COMMENT HERE ===== */
-
-
-p {}
 
 .o-3-text p {
     width: 100%;
@@ -310,7 +281,7 @@ button.sign-up, button.login {
 
 
 .circle {
-    animation: wave 4s ease-in-out infinite;
+    animation: wave 6s ease-in-out infinite;
 }
 
 .circle.o-2 {
@@ -330,7 +301,33 @@ button.sign-up, button.login {
 }
 
 
-@keyframes wave {
+
+
+  .titles h2 {
+    display: none;
+  }
+
+  .titles h2.active {
+    display: block;
+    animation: grow 1s;
+    animation-delay: 0.7s;
+  }
+
+  @keyframes grow {
+
+    0%, 100% {
+      transform: scale(100%);
+    }
+    25% {
+      transform: scale(200%);
+    }
+    50% {
+      transform: scale(300%);
+    }    
+    
+  }
+
+  @keyframes wave {
     0%, 100% {
       transform: translateY(0);
     }
@@ -342,3 +339,29 @@ button.sign-up, button.login {
     }
   }
 
+  
+  @keyframes subtle-glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1e0a1e, 0 0 20px #1b071b, 0 0 25px #270627, 0 0 30px #1e051e;
+    }
+    50% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #280828, 0 0 30px #281328, 0 0 40px #320b32, 0 0 50px #530f53, 0 0 60px #500c50;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .circles-container p {
+      top: 270px;
+      position: absolute;
+      color: white;
+    }
+    
+    .third-section {
+      grid-auto-flow: unset;
+    }
+    
+    .o-3-text {
+      display: none;
+    }
+    }
+  
